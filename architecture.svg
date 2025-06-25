@@ -1,0 +1,137 @@
+
+<svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="800" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="600" y="30" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#1e293b">
+    MindfulThai App Architecture
+  </text>
+  
+  <!-- Frontend Layer -->
+  <rect x="50" y="60" width="1100" height="180" fill="#e0f2fe" stroke="#0284c7" stroke-width="2" rx="10"/>
+  <text x="70" y="80" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#0284c7">Frontend Layer</text>
+  
+  <!-- Screen Components -->
+  <rect x="70" y="100" width="150" height="60" fill="#bae6fd" stroke="#0369a1" rx="5"/>
+  <text x="145" y="125" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#0369a1">HomeScreen</text>
+  <text x="145" y="140" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#0369a1">Mood • Tips • CTA</text>
+  
+  <rect x="240" y="100" width="150" height="60" fill="#bae6fd" stroke="#0369a1" rx="5"/>
+  <text x="315" y="125" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#0369a1">ChatScreen</text>
+  <text x="315" y="140" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#0369a1">AI Conversation</text>
+  
+  <rect x="410" y="100" width="150" height="60" fill="#bae6fd" stroke="#0369a1" rx="5"/>
+  <text x="485" y="125" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#0369a1">ContentScreen</text>
+  <text x="485" y="140" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#0369a1">Meditations</text>
+  
+  <rect x="580" y="100" width="150" height="60" fill="#bae6fd" stroke="#0369a1" rx="5"/>
+  <text x="655" y="125" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#0369a1">TherapistScreen</text>
+  <text x="655" y="140" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#0369a1">Booking System</text>
+  
+  <rect x="750" y="100" width="150" height="60" fill="#bae6fd" stroke="#0369a1" rx="5"/>
+  <text x="825" y="125" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#0369a1">ProfileScreen</text>
+  <text x="825" y="140" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#0369a1">Settings • Progress</text>
+  
+  <!-- Navigation -->
+  <rect x="920" y="100" width="200" height="60" fill="#dcfce7" stroke="#16a34a" rx="5"/>
+  <text x="1020" y="125" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#16a34a">BottomNavigation</text>
+  <text x="1020" y="140" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#16a34a">5-Tab Navigation</text>
+  
+  <!-- UI Components -->
+  <rect x="70" y="180" width="1050" height="40" fill="#f3e8ff" stroke="#7c3aed" rx="5"/>
+  <text x="90" y="200" font-family="Arial, sans-serif" font-size="12" fill="#7c3aed">shadcn/ui Components: Button • Card • Dialog • Form • Input • Progress • Toast • 25+ others</text>
+  
+  <!-- Services Layer -->
+  <rect x="50" y="260" width="1100" height="120" fill="#fef3c7" stroke="#d97706" stroke-width="2" rx="10"/>
+  <text x="70" y="280" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#d97706">Services Layer</text>
+  
+  <rect x="70" y="300" width="200" height="60" fill="#fed7aa" stroke="#ea580c" rx="5"/>
+  <text x="170" y="325" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#ea580c">HealthDataService</text>
+  <text x="170" y="340" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#ea580c">Smartwatch Integration</text>
+  
+  <rect x="290" y="300" width="200" height="60" fill="#fed7aa" stroke="#ea580c" rx="5"/>
+  <text x="390" y="325" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#ea580c">React Query</text>
+  <text x="390" y="340" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#ea580c">Data Fetching & Cache</text>
+  
+  <rect x="510" y="300" width="200" height="60" fill="#fed7aa" stroke="#ea580c" rx="5"/>
+  <text x="610" y="325" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#ea580c">State Management</text>
+  <text x="610" y="340" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#ea580c">Context + Local State</text>
+  
+  <rect x="730" y="300" width="200" height="60" fill="#fed7aa" stroke="#ea580c" rx="5"/>
+  <text x="830" y="325" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#ea580c">Privacy Service</text>
+  <text x="830" y="340" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#ea580c">PDPA/GDPR Compliance</text>
+  
+  <!-- External APIs -->
+  <rect x="50" y="400" width="1100" height="120" fill="#fce7f3" stroke="#be185d" stroke-width="2" rx="10"/>
+  <text x="70" y="420" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#be185d">External APIs & Services</text>
+  
+  <rect x="70" y="440" width="150" height="60" fill="#fbcfe8" stroke="#be185d" rx="5"/>
+  <text x="145" y="465" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#be185d">HealthKit API</text>
+  <text x="145" y="480" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#be185d">Apple Watch</text>
+  
+  <rect x="240" y="440" width="150" height="60" fill="#fbcfe8" stroke="#be185d" rx="5"/>
+  <text x="315" y="465" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#be185d">Samsung Health</text>
+  <text x="315" y="480" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#be185d">Galaxy Watch</text>
+  
+  <rect x="410" y="440" width="150" height="60" fill="#fbcfe8" stroke="#be185d" rx="5"/>
+  <text x="485" y="465" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#be185d">Fitbit API</text>
+  <text x="485" y="480" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#be185d">Cross-platform</text>
+  
+  <rect x="580" y="440" width="150" height="60" fill="#fbcfe8" stroke="#be185d" rx="5"/>
+  <text x="655" y="465" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#be185d">AI Chat API</text>
+  <text x="655" y="480" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#be185d">Mood Analysis</text>
+  
+  <rect x="750" y="440" width="150" height="60" fill="#fbcfe8" stroke="#be185d" rx="5"/>
+  <text x="825" y="465" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#be185d">Payment API</text>
+  <text x="825" y="480" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#be185d">Premium Subscriptions</text>
+  
+  <rect x="920" y="440" width="200" height="60" fill="#fbcfe8" stroke="#be185d" rx="5"/>
+  <text x="1020" y="465" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#be185d">Push Notifications</text>
+  <text x="1020" y="480" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#be185d">Cross-device Alerts</text>
+  
+  <!-- Data Storage -->
+  <rect x="50" y="540" width="1100" height="80" fill="#ecfdf5" stroke="#059669" stroke-width="2" rx="10"/>
+  <text x="70" y="560" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#059669">Data Storage & Privacy</text>
+  
+  <rect x="70" y="575" width="200" height="35" fill="#bbf7d0" stroke="#059669" rx="5"/>
+  <text x="170" y="595" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#059669">Local Storage (Encrypted)</text>
+  
+  <rect x="290" y="575" width="200" height="35" fill="#bbf7d0" stroke="#059669" rx="5"/>
+  <text x="390" y="595" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#059669">30-Day Data Retention</text>
+  
+  <rect x="510" y="575" width="200" height="35" fill="#bbf7d0" stroke="#059669" rx="5"/>
+  <text x="610" y="595" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#059669">PDPA/GDPR Compliance</text>
+  
+  <rect x="730" y="575" width="200" height="35" fill="#bbf7d0" stroke="#059669" rx="5"/>
+  <text x="830" y="595" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#059669">User Consent Management</text>
+  
+  <rect x="950" y="575" width="170" height="35" fill="#bbf7d0" stroke="#059669" rx="5"/>
+  <text x="1035" y="595" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#059669">Data Anonymization</text>
+  
+  <!-- Data Flow Arrows -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#374151"/>
+    </marker>
+  </defs>
+  
+  <!-- Screen to Services -->
+  <line x1="400" y1="160" x2="400" y2="300" stroke="#374151" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Services to APIs -->
+  <line x1="400" y1="360" x2="400" y2="440" stroke="#374151" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Services to Storage -->
+  <line x1="400" y1="360" x2="400" y2="575" stroke="#374151" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Legend -->
+  <rect x="50" y="640" width="1100" height="140" fill="#f8fafc" stroke="#e2e8f0" rx="5"/>
+  <text x="70" y="660" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1e293b">Architecture Components Explanation</text>
+  
+  <text x="70" y="680" font-family="Arial, sans-serif" font-size="12" fill="#475569">• Frontend Layer: React components built with TypeScript, Tailwind CSS, and shadcn/ui</text>
+  <text x="70" y="700" font-family="Arial, sans-serif" font-size="12" fill="#475569">• Services Layer: Business logic, state management, and external API integration</text>
+  <text x="70" y="720" font-family="Arial, sans-serif" font-size="12" fill="#475569">• External APIs: Smartwatch health data, AI chat, payments, and push notifications</text>
+  <text x="70" y="740" font-family="Arial, sans-serif" font-size="12" fill="#475569">• Data Storage: Encrypted local storage with privacy compliance and user consent</text>
+  <text x="70" y="760" font-family="Arial, sans-serif" font-size="12" fill="#475569">• Data Flow: Unidirectional from UI components through services to external APIs and storage</text>
+</svg>
