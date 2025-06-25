@@ -10,7 +10,7 @@ import BottomNavigation from '@/components/navigation/BottomNavigation';
 
 const Index = () => {
   const [activeScreen, setActiveScreen] = useState('home');
-  const [language, setLanguage] = useState('en'); // 'en' or 'th'
+  const [language, setLanguage] = useState<'en' | 'th'>('en');
 
   const navItems = [
     { id: 'home', icon: Home, label: { en: 'Home', th: 'หน้าหลัก' } },
