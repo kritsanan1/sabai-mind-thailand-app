@@ -1,7 +1,8 @@
 
 import React, { useState } from 'react';
-import { Star, Heart, Moon, Sun } from 'lucide-react';
+import { Star, Heart, Moon, Sun, Settings } from 'lucide-react';
 import PremiumUpgradeModal from '@/components/modals/PremiumUpgradeModal';
+import StressLevelCard from '@/components/smartwatch/StressLevelCard';
 
 interface HomeScreenProps {
   language: 'en' | 'th';
@@ -44,6 +45,11 @@ const HomeScreen: React.FC<HomeScreenProps> = ({ language }) => {
     excited: '🤩'
   };
 
+  const handleStartBreathing = () => {
+    // Navigate to breathing exercises in Content section
+    console.log('Starting breathing exercise...');
+  };
+
   return (
     <div className="p-6 space-y-6">
       {/* Greeting Section */}
@@ -56,6 +62,12 @@ const HomeScreen: React.FC<HomeScreenProps> = ({ language }) => {
           <span className="text-gray-600">Monday, June 6</span>
         </div>
       </div>
+
+      {/* Stress Level Card - New smartwatch integration */}
+      <StressLevelCard 
+        language={language} 
+        onStartBreathing={handleStartBreathing}
+      />
 
       {/* Mood Summary Card */}
       <div className="bg-white rounded-xl p-6 shadow-sm border border-blue-100">

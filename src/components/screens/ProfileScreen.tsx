@@ -1,6 +1,8 @@
 
 import React, { useState } from 'react';
-import { Settings, Star, Calendar, Trophy, Crown, ChevronRight } from 'lucide-react';
+import { Settings, Star, Calendar, Trophy, Crown, ChevronRight, Watch } from 'lucide-react';
+import DeviceConnectionScreen from '@/components/smartwatch/DeviceConnectionScreen';
+import SleepSummaryChart from '@/components/smartwatch/SleepSummaryChart';
 
 interface ProfileScreenProps {
   language: 'en' | 'th';
@@ -9,6 +11,7 @@ interface ProfileScreenProps {
 
 const ProfileScreen: React.FC<ProfileScreenProps> = ({ language, setLanguage }) => {
   const [showSettings, setShowSettings] = useState(false);
+  const [showDeviceConnection, setShowDeviceConnection] = useState(false);
 
   const text = {
     en: {
@@ -24,6 +27,7 @@ const ProfileScreen: React.FC<ProfileScreenProps> = ({ language, setLanguage }) 
       notifications: 'Notifications',
       privacy: 'Privacy Settings',
       help: 'Help & Support',
+      connectedDevices: 'Connected Devices',
       upgradePremium: 'Upgrade to Premium',
       badges: {
         beginner: 'First Steps',
@@ -44,6 +48,7 @@ const ProfileScreen: React.FC<ProfileScreenProps> = ({ language, setLanguage }) 
       notifications: 'การแจ้งเตือน',
       privacy: 'การตั้งค่าความเป็นส่วนตัว',
       help: 'ความช่วยเหลือและการสนับสนุน',
+      connectedDevices: 'อุปกรณ์ที่เชื่อมต่อ',
       upgradePremium: 'อัพเกรดเป็นพรีเมียม',
       badges: {
         beginner: 'ก้าวแรก',
@@ -67,10 +72,15 @@ const ProfileScreen: React.FC<ProfileScreenProps> = ({ language, setLanguage }) 
 
   const settingsItems = [
     { id: 'language', label: text[language].language, icon: '🌐' },
+    { id: 'devices', label: text[language].connectedDevices, icon: '⌚' },
     { id: 'notifications', label: text[language].notifications, icon: '🔔' },
     { id: 'privacy', label: text[language].privacy, icon: '🔒' },
     { id: 'help', label: text[language].help, icon: '❓' }
   ];
+
+  const handlePreBedMeditation = () => {
+    console.log('Starting pre-bed meditation...');
+  };
 
   return (
     <div className="p-6 space-y-6">
@@ -100,6 +110,12 @@ const ProfileScreen: React.FC<ProfileScreenProps> = ({ language, setLanguage }) 
           ))}
         </div>
       </div>
+
+      {/* Sleep Summary - New smartwatch integration */}
+      <SleepSummaryChart 
+        language={language} 
+        onPreBedMeditation={handlePreBedMeditation}
+      />
 
       {/* Achievements */}
       <div>
@@ -153,6 +169,8 @@ const ProfileScreen: React.FC<ProfileScreenProps> = ({ language, setLanguage }) 
               onClick={() => {
                 if (item.id === 'language') {
                   setLanguage(language === 'en' ? 'th' : 'en');
+                } else if (item.id === 'devices') {
+                  setShowDeviceConnection(true);
                 }
               }}
               className="w-full flex items-center justify-between p-4 hover:bg-gray-50 transition-colors border-b border-gray-100 last:border-b-0"
@@ -173,6 +191,14 @@ const ProfileScreen: React.FC<ProfileScreenProps> = ({ language, setLanguage }) 
           ))}
         </div>
       </div>
+
+      {/* Device Connection Modal */}
+      {showDeviceConnection && (
+        <DeviceConnectionScreen 
+          language={language}
+          onClose={() => setShowDeviceConnection(false)}
+        />
+      )}
     </div>
   );
 };
